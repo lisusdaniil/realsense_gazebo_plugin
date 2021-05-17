@@ -2,6 +2,10 @@
 #include <sensor_msgs/fill_image.h>
 #include <sensor_msgs/point_cloud2_iterator.h>
 
+#include <sdf/sdf.hh>
+#include <memory>
+#include <string>
+
 namespace {
 std::string extractCameraName(const std::string &name);
 sensor_msgs::CameraInfo cameraInfo(const sensor_msgs::Image &image,
